@@ -1,8 +1,16 @@
 import './Home.css';
+
+
 function Home() {
-    const name = "Nadarajan";
+
+    function names(){
+        const names = ['Nattu','Subash','Praveen'];
+        const int = math.floor(math.random()*3);
+        return names[int];
+    } 
+   
     return(
-        <h1 className='home'>Hello this is {name}</h1>
+        <h1 className='home'>Hello this is {names()}</h1>
     )
 }
 

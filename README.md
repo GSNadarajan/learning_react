@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### react components
+
+Functional components
+Class components
+
+### react styling 
+
+1) create separate css file
+2) write inline styling "camelcase"
+3) declare styling inside to js variable
+
+
