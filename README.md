@@ -123,3 +123,13 @@ to call the above function inside JSX <button onClick={() => Handleclick(nattu) 
 
 
 ### Event handling 
+
+### `Use states in React`
+
+There are some rules in usestates declaration or usage
+
+1)We will not use the `usestate()` inside a `class components`
+2)We will not use the `usestate()` inside a `conditional statements`
+3) try to call the function as like ()=>{function name} 
+
+

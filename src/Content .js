@@ -41,7 +41,7 @@ const Content = () => {
     // for styling
     const contentstyle = {
         textAlign : 'center',
-        marginTop : '20%',
+        marginTop : '9%',
         
     }
     const btnstyle = {
