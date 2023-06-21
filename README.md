@@ -121,3 +121,5 @@ to call the function we use
 
 to call the above function inside JSX <button onClick={() => Handleclick(nattu) }
 
+
+### Event handling 

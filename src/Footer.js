@@ -1,13 +1,15 @@
 import React from 'react';
-import './Footer.css';
 
 const Footer = () => {
     const yr = new Date();
     const Footerstyle = {
-        backgroundColor : 'mediumblue',
         color :'white',
-        height: '50px',
         textAlign : 'center',
+        position: 'fixed',
+        bottom: '0',
+        width: '100%',
+        height: '60px',   /* Height of the footer */
+        background: 'mediumblue',
        
     }
   return (
