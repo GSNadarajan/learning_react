@@ -129,7 +129,12 @@ to call the above function inside JSX <button onClick={() => Handleclick(nattu) 
 There are some rules in usestates declaration or usage
 
 1)We will not use the `usestate()` inside a `class components`
+
 2)We will not use the `usestate()` inside a `conditional statements`
+
 3) try to call the function as like ()=>{function name} 
 
+### `list and keys` 
+
+Lists and keys are nothing but we have usestate method inside a default values like two or more objects we will render it by using `Mapping` function 
 
