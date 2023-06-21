@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaTrash } from 'react-icons/fa';
 import './Home.css';
 
 
@@ -14,47 +15,61 @@ function Home() {
     // const result = numberss.map(n => n)
     // console.log(result);
 
-    const [items] = useState([
+    const [items , setItems] = useState([
         {
             id : '1',
-            checked : 'true',
+            checked : true,
             description : 'create a react project',
         }
         ,
         {
             id : '2',
-            checked : 'false',
+            checked : false,
             description : 'work in a react project',
         }
         , 
          {
             id : '3',
-            checked : 'true',
+            checked : true,
             description : 'deploy a react project',
         }
     ])
 
     const homestyle ={
-        textAlign : 'center',
+        textAlign : 'center !important',
         marginTop : '20px',
+        padding:'20px',
+
+
     }
 
+    const handlecheck = (id) =>{
+        const listitems = items.map((item) => item.id === id ? {...item ,checked:!item.checked} : item)
+        setItems(listitems)
+    }
+
+    const handledelete = (id) =>{
+        alert(`id: ${id}`)
+    }
    
     return(
-        <div >
-            <hr/>
+        <center>
+
+        <div className='container'>
             <ul style={homestyle}>
                 {items.map((item) => (
-                    <li className='list'>
-                        <input type='checkbox' checked={item.checked}/>
-                        <label>{item.description}</label>
-                        <button>delete</button>
+                    <li className='list'  key={item.id}>
+                        <input type='checkbox' onChange={() => handlecheck(item.id)} checked={item.checked}/>
+                        <label >{item.description}</label>
+                        <FaTrash onClick={() => handledelete(item.id)} className='image' role='button'/>
                     </li>
+                    
 
                 ))
                 }
             </ul>
         </div>
+        </center>
        
 
     )

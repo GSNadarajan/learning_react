@@ -138,3 +138,10 @@ There are some rules in usestates declaration or usage
 
 Lists and keys are nothing but we have usestate method inside a default values like two or more objects we will render it by using `Mapping` function 
 
+### `REACT ICONS`
+
+1) install through `npm install react-icons --save`
+
+2) git repo for react icons `https://github.com/react-icons/react-icons#readme`
+
+### This is url for react icons `https://react-icons.github.io/react-icons/`
