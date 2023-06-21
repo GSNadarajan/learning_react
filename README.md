@@ -80,4 +80,44 @@ Class components
 2) write inline styling "camelcase"
 3) declare styling inside to js variable
 
+### Functional components
+
+1) normal function
+     
+     function function_name(){
+        return(
+          JSX content
+        )
+     }
+
+2) Arrow function
+ 
+    const function_name = () =>
+    {
+        JSX content
+    }
+
+### Function rules 
+
+If we create a function like it will alert something like hello   
+
+const Hello = () =>y{
+   alert(hello);
+}
+
+to call the function we use 
+### `function_name without ()` if we use () the function will be called automatically when we load the page
+
+### if we need to pass the argument as a parameter in the function we should use 'anonymous function'
+
+### `anonymous function`
+
+### SYNTAX
+
+() => {Function_name(arguments)}
+
+
+### `function syntax for passing arguments` => const Handleclick = () => { `hello this is ${name}`}
+
+to call the above function inside JSX <button onClick={() => Handleclick(nattu) }
 
