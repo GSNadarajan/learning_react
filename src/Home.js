@@ -43,24 +43,30 @@ function Home() {
 
     }
 
+    
     const handlecheck = (id) =>{
         const listitems = items.map((item) => item.id === id ? {...item ,checked:!item.checked} : item)
         setItems(listitems)
+        localStorage.setItem("Todolist",JSON.stringify(listitems))
     }
 
     const handledelete = (id) =>{
-        alert(`id: ${id}`)
+        alert('Are you sure to want to delete this one ?')
+        const listitemss = items.filter((item) => item.id !== id)
+        setItems(listitemss)
+        localStorage.setItem("Todolist",JSON.stringify(listitemss))
     }
    
     return(
         <center>
 
         <div className='container'>
-            <ul style={homestyle}>
+            {items.length ? (
+                <ul style={homestyle}>
                 {items.map((item) => (
                     <li className='list'  key={item.id}>
                         <input type='checkbox' onChange={() => handlecheck(item.id)} checked={item.checked}/>
-                        <label >{item.description}</label>
+                        <label style={item.checked ? {textDecoration :'line-through'} : null} onDoubleClick={() => handlecheck(item.id)}>{item.description}</label>
                         <FaTrash onClick={() => handledelete(item.id)} className='image' role='button'/>
                     </li>
                     
@@ -68,6 +74,12 @@ function Home() {
                 ))
                 }
             </ul>
+
+            ): (
+                <p>Your list is empty</p>
+            )
+        }
+            
         </div>
         </center>
        
