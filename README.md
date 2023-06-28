@@ -145,3 +145,15 @@ Lists and keys are nothing but we have usestate method inside a default values l
 2) git repo for react icons `https://github.com/react-icons/react-icons#readme`
 
 ### This is url for react icons `https://react-icons.github.io/react-icons/`
+
+### `React props`
+
+React props are like passing properties into a components 
+
+for example : we've header component in index.js
+
+<header title='Nattu'/>
+
+1) To pass the title as props in the header component we will pass props as argument in the header function and we use `props.title` inside an `JSX element` like <h1>{props.title}</h1>
+
+`Using these props we can able to share data from parent to child component but not possible with child to child components` 

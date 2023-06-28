@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     const Headerstyle = {
           textAlign : 'left',
           padding: '10px',
@@ -16,7 +16,7 @@ const Header = () => {
        
     
   return (
-    <header style={Headerstyle}>Navbar</header>
+    <header style={Headerstyle} >{props.title}</header>
   )
 }
 
