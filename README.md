@@ -157,3 +157,19 @@ for example : we've header component in index.js
 1) To pass the title as props in the header component we will pass props as argument in the header function and we use `props.title` inside an `JSX element` like <h1>{props.title}</h1>
 
 `Using these props we can able to share data from parent to child component but not possible with child to child components` 
+
+### `Useref`
+
+Useref is an another hook which basically used for focus in input field
+
+###  `Useeffect`
+
+Useeffect is also a hook in react which is a function and it renders everytime when some actions did in our site 
+
+useeffect(
+() => {
+  console.log("rendering")
+},[])
+
+Here this is an example for useffect nd rendering text is printing in the console tab when any actions being did in the page and
+[] -> this is a dependencies of the useeffect hook basically here it has no dependencies
